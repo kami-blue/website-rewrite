@@ -245,7 +245,7 @@ const devDiv =
     <div>
       Please make sure to restart your IDE and reimport 🔄 gradle after running all the setup
       <br>Read Support for help and Troubleshooting for common errors. TODO TODO
-      <br>When making a pull request or issue, please follow the Code of Conduct TODo
+      <br>When making a pull request or issue, please follow the Code of Conduct 
     </div>
     <br>
     <b><u>Contributing</u></b>
