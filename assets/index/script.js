@@ -244,7 +244,7 @@ const devDiv =
     <h3><b>Building and Contributing</b></h3>
     <div>
       Please make sure to restart your IDE and reimport 🔄 gradle after running all the setup
-      <br>Read Support for help and Troubleshooting for common errors. TODO TODO
+      <br>Read Support for help and Troubleshooting for common errors.
       <br>When making a pull request or issue, please follow the Code of Conduct 
     </div>
     <br>
