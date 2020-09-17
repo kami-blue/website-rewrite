@@ -1,3 +1,4 @@
+
 function joinAnimation() {
     const pre_join = document.getElementById("join-button");
     const joining = document.createElement("join-button");
@@ -298,9 +299,11 @@ const discordDiv =
 					</div>
 				</div><strong class="smallText" style="color: #b9bbbe;text-overflow: ellipsis;overflow: hidden;"></strong>
 				<div style="display: flex;align-items: center">
-					<strong class="smallText" style="color: #b9bbbe;text-overflow: ellipsis;overflow: hidden;"><i class="status" style="background-color: #43b581"></i> <span style=
-					"margin-right: 8px;font-weight:normal">1,028 Online</span> <i class="status" style="background-color: #747f8d"></i> <span style="margin-right: 8px;font-weight:normal">5,225
-					Members</span></strong>
+          <strong class="smallText" style="color: #b9bbbe;text-overflow: ellipsis;overflow: hidden;">
+          <i class="emoji green"></i>
+          <span id="online" style="margin-right: 8px;font-weight:normal"></span>
+          <i class="emoji grey"></i>
+          <span id="members" style="margin-right: 8px;font-weight:normal"></span></strong>
 				</div><strong class="smallText" style="color: #b9bbbe;text-overflow: ellipsis;overflow: hidden;"></strong>
 			</div><button id="join-button" class="button buttonSize" onclick="joinAnimation();" style="background-color: #43b581; color: #fff">Join</button>
 		</div>

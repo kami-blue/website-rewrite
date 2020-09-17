@@ -42,7 +42,13 @@
     <button class="button-button" onclick="document.getElementById('info').innerHTML = installDiv;">Install / FAQ</button>
     <button class="button-button" onclick="document.getElementById('info').innerHTML = moduleDiv;">Modules</button>
     <button class="button-button" onclick="document.getElementById('info').innerHTML = devDiv;">Contributing</button>
-    <button class="button-button" onclick="document.getElementById('info').innerHTML = discordDiv;">Support</button>
+	<button class="button-button" onclick="document.getElementById('info').innerHTML = discordDiv;
+		fetch('https:/'+'/discordapp.com/api/guilds/573954110454366214/widget.json').then(res =>res.json()).then(out => {
+			console.log(out)
+			document.getElementById('online').innerHTML = `${out.presence_count} Online`;
+			document.getElementById('members').innerHTML = out.channels[1].name;
+		})
+		">Support</button>
   </div>
   <!--Insert Footer Here-->
 	<!--Website made with HTML, CSS, JS and 💓 by Humboldt123 -->
