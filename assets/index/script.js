@@ -1,3 +1,17 @@
+
+function joinAnimation() {
+    const pre_join = document.getElementById("join-button");
+    const joining = document.createElement("join-button");
+    const post_join = document.createElement("join-button");
+    joining.innerHTML = '<a href="#" class="button buttonSize loading" style="background-color: #43b581;color: #fff">Joining</a>';
+    post_join.innerHTML = '<a href="#" class="button buttonSize" style="background-color: #43b581;color: #fff">Join</a>';
+    pre_join.replaceWith(joining)
+    setTimeout(function () {
+      window.open("https://discord.gg/KfpqwZB");
+        joining.replaceWith(post_join);
+    }, 1000)
+}
+
 const homeDiv =
 	`<!--Home-->
     <div>
@@ -267,10 +281,32 @@ const devDiv =
 
 
 const discordDiv =
-	`<!--Discord-->
-    <div>
-    <h3><b>Join the Discord</b></h3>
-
-  </div>
+`<!--Discord Invite-->
+<div>
+	<h1>Join the Discord</h1><br>
+	<div class="wrapper userSelectNone" style="background: #2f3136;color: #ffffff;">
+  <link href="assets/index/discord.css" rel="stylesheet">
+		<h5 class="smallText header" style="color: #b9bbbe;">YOU'VE BEEN INVITED TO JOIN A SERVER</h5>
+		<div class="content">
+			<div class="icon" role="button" style=
+			"background-image: url(&quot;https://cdn.discordapp.com/icons/573954110454366214/a_fc6c9b276f716f536a196331ea990133.gif?size=512&quot;); margin-right: 16px;-webkit-box-flex: 0;-ms-flex: 0 0 auto;flex: 0 0 auto;"
+			tabindex="0"></div>
+			<div class="buttonFlex" style="flex: 1 1 auto;display: -webkit-box;display: -ms-flexbox;display: flex;">
+				<div role="button" tabindex="0">
+					<h3 style="margin-bottom: 2px;font-weight: 600;line-height: 20px"></h3>
+					<div>
+						<h3 style="margin-bottom: 2px;font-weight: 600;line-height: 20px"><span>KAMI Blue / カミブルー</span> </h3>
+					</div>
+				</div><strong class="smallText" style="color: #b9bbbe;text-overflow: ellipsis;overflow: hidden;"></strong>
+				<div style="display: flex;align-items: center">
+          <strong class="smallText" style="color: #b9bbbe;text-overflow: ellipsis;overflow: hidden;">
+          <i class="emoji green"></i>
+          <span id="online" style="margin-right: 8px;font-weight:normal"></span>
+          <i class="emoji grey"></i>
+          <span id="members" style="margin-right: 8px;font-weight:normal"></span></strong>
+				</div><strong class="smallText" style="color: #b9bbbe;text-overflow: ellipsis;overflow: hidden;"></strong>
+			</div><button id="join-button" class="button buttonSize" onclick="joinAnimation();" style="background-color: #43b581; color: #fff">Join</button>
+		</div>
+	</div>
+</div>
   `;
-
