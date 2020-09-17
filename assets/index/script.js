@@ -273,5 +273,3 @@ const discordDiv =
 
   </div>
   `;
-
-function secret_function(){window.open("https://kamiblue.org/backdoored")}
